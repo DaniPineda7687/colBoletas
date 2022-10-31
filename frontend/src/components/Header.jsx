@@ -10,7 +10,7 @@ export default function Header(){
     return(
         <header className='header__container'>
             <section className='header__btn__menu'>
-                <i class="bi bi-list" onClick={handlerMenu}></i>
+                <i classNameName="bi bi-list" onClick={handlerMenu}></i>
             </section>
             <figure className='header__logo'>
                 <Link to="/">
@@ -20,7 +20,7 @@ export default function Header(){
             <nav className={`nav__container ${menuVisible ? "" : "disabled"}`}>
                 <section className='nav__menu__header'>
                     <section className='header__btn__menu'>
-                        <i class="bi bi-x" onClick={handlerMenu}></i>
+                        <i className="bi bi-x" onClick={handlerMenu}></i>
                     </section>
                     <figure className='nav__logo'>
                         <Link to="/">
@@ -29,9 +29,9 @@ export default function Header(){
                     </figure>
                 </section>
                 <ul className='nav__menu__container'>
-                    <li><Link to="#" className='nav__menu--link'><i class="bi bi-house-door-fill"></i><span>Inicio</span></Link></li>
-                    <li><Link to="#" className='nav__menu--link'><i class="bi bi-star-fill"></i><span>Iniciar sesión</span></Link></li>
-                    <li><Link to="#" className='nav__menu--link'><i class="bi bi-person-plus-fill"></i><span>Registrate</span></Link></li>
+                    <li><Link to="#" className='nav__menu--link'><i className="bi bi-house-door-fill"></i><span>Inicio</span></Link></li>
+                    <li><Link to="#" className='nav__menu--link'><i className="bi bi-star-fill"></i><span>Iniciar sesión</span></Link></li>
+                    <li><Link to="#" className='nav__menu--link'><i className="bi bi-person-plus-fill"></i><span>Registrate</span></Link></li>
                 </ul>
             </nav>
         </header>
