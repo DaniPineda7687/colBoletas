@@ -1,0 +1,18 @@
+.events__container{
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-content: center;
+    max-width: 1600px;
+    margin: var(--header-height) auto;
+    gap: 2rem;
+    padding: .8rem 1.2rem;
+}
+
+
+@media screen and (min-width:500px) {
+    .events__container{
+        grid-template-columns: repeat(auto-fit, minmax(max-content,350px));
+        
+
+    }
+}

@@ -1,0 +1,76 @@
+.event__card__container{
+    position: relative;
+    max-width: 350px;
+    display: grid;
+    grid-template-rows: 400px minmax(min-content,auto) auto;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: .8rem;
+    overflow: hidden;
+}
+.event__banner__disabled{
+    filter: grayscale();
+}
+.event__card__disabled::before{
+    content: "AGOTADO";
+    position: absolute;
+    z-index: 50;
+    background-color: #c4302b; 
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.6rem;
+    padding: 1.2rem 9.5rem;
+    right: 0;
+    transform: rotate(45deg) translate(7.5rem,0rem);
+}
+.event__card__banner{
+    border-radius: .8rem;
+}
+.event__card__banner img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: .8rem .8rem 0 0 ;
+}
+
+.event__description{
+    padding: 0 2rem 1rem 2rem;
+    text-align: left;
+    color: var(--gray);
+    
+}
+.event__description p{
+    width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.event--title p{
+    text-overflow: ellipsis;
+    font-size: var(--secondary-title);
+    font-weight: var(--font-bold);
+    margin-bottom: 1rem;
+}
+.event--date, .event--price, .event--location{
+    font-size: var(--medium-font);
+    font-weight: 600;
+    margin-bottom: .8rem;
+    display: flex;
+    gap: .8rem;
+}
+
+.event__action button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    padding: 1.4rem 0;
+    border-radius: 0 0 .8rem .8rem;
+    font-size: var(--small-font);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+}
+
+.event__action button:disabled{
+    cursor:initial;
+    filter: grayscale();
+}

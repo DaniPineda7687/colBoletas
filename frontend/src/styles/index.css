@@ -7,6 +7,7 @@
   --primary-color-dark:#4d2c91;
   --secondary-color:#fbb50a;
   --white:#ffffff;
+  --gray:#3b3b3b;
   /*Tamaños de fuente*/
   --primary-title:2.8rem;
   --secondary-title:2.4rem;
@@ -29,6 +30,9 @@
 html{
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
+}
+body{
+  background-color: var(--primary-color-light);
 }
 ul{
   list-style: none;

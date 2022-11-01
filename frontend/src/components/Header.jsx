@@ -10,13 +10,14 @@ export default function Header(){
     return(
         <header className='header__container'>
             <section className='header__btn__menu'>
-                <i classNameName="bi bi-list" onClick={handlerMenu}></i>
+                <i className="bi bi-list" onClick={handlerMenu}></i>
             </section>
             <figure className='header__logo'>
                 <Link to="/">
                     <img src="https://www.passline.com/imagenes/logo-passline.png" alt="Logo de ColBoletas" />
                 </Link>
             </figure>
+            
             <nav className={`nav__container ${menuVisible ? "" : "disabled"}`}>
                 <section className='nav__menu__header'>
                     <section className='header__btn__menu'>
@@ -34,6 +35,9 @@ export default function Header(){
                     <li><Link to="#" className='nav__menu--link'><i className="bi bi-person-plus-fill"></i><span>Registrate</span></Link></li>
                 </ul>
             </nav>
+            <section className='header__btn__menu btn__cart'>
+                <Link to="#" className='nav__menu--link'><i className="bi bi-bag"></i></Link>
+            </section>
         </header>
     );
 }
