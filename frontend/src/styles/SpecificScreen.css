@@ -1,4 +1,13 @@
 .specific__container{
+    display: grid;
     position: relative;
     top: var(--header-height);
+    max-width: 1600px;
+    background-color: #c29dff;
+}
+
+@media screen and (min-width:500px) {
+    .specific__container{
+        grid-template-columns: repeat(auto-fit, minmax(max-content,350px));
+    }
 }

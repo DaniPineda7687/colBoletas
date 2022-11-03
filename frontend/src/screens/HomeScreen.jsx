@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import "../styles/HomeScreen.css";
 import data from "../data.js";
 import { Link } from "react-router-dom";

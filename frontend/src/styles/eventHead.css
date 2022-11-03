@@ -1,0 +1,9 @@
+.eventHead__title{
+    font-size: var(--subtitle-font);
+    color: rgb(0, 0, 0);
+}
+.eventHead__location{
+    font-size: var(--small-font);
+    color: rgb(106, 58, 218);
+    font-weight: 1000;
+}
