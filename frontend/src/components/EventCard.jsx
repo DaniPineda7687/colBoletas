@@ -11,20 +11,20 @@ export default function EventCard(props){
                     <p>{props.event.name}</p>
                 </div>
                 <div className="event--date">
-                    <i class="bi bi-calendar2-week-fill"></i>
+                    <i className="bi bi-calendar2-week-fill"></i>
                     <p>{props.event.date.toDateString() + " - " +  props.event.date.toLocaleTimeString()}</p>
                 </div>
                 <div className="event--price">
-                    <i class="bi bi-ticket-detailed-fill"></i>
+                    <i className="bi bi-ticket-detailed-fill"></i>
                     <p>Desde {formatPrices(props.event.price)}</p>
                 </div>
                 <div className="event--location">
-                    <i class="bi bi-geo-alt-fill"></i>
+                    <i className="bi bi-geo-alt-fill"></i>
                     <p>{props.event.city}</p>
                 </div>
             </section>
             <section className="event__action">
-                <button disabled={`${props.event.totalTickets===0 ? "true" : ""}`}><i class="bi bi-ticket-perforated-fill"></i> COMPRAR TICKETS (Quedan: {props.event.totalTickets})</button>
+                <button disabled={`${props.event.totalTickets===0 ? "true" : ""}`}><i className="bi bi-ticket-perforated-fill"></i> COMPRAR TICKETS (Quedan: {props.event.totalTickets})</button>
             </section>
         </article>
     );

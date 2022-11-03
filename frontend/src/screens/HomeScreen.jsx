@@ -6,14 +6,13 @@ import EventCard from "../components/EventCard";
 export default function HomeScreen(){
     return(
         <div>
-            <Header/>
             <section className="events__container">
                 {
                     data.events.map((event,index) => {
                         return(
-                            <Link to="#">
-                                {/*Paso por el evento que esta siendo recorrido como prop del componente EventCard*/}
-                                <EventCard event={event}/>
+                            <Link key={event.id} to={`/especifico/${event.id}`}>
+                                {/*Paso por el vento que esta siendo recorrido como prop del componente EventCard*/}
+                                <EventCard  event={event}/>
                             </Link>
                         );
                     })
