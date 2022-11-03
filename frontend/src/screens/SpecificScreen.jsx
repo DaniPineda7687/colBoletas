@@ -6,9 +6,9 @@ export const SpecificScreen = () => {
     const {id} = useParams();
     return(
         <>
-        <div>
+        <section className="specific__container">
             <EventHead id={id}/>
-        </div>
+        </section>
         </>
     );
 };

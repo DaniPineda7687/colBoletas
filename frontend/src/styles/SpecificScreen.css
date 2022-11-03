@@ -1,5 +1,4 @@
-.prueba{
-    display: grid;
-    position: absolute;
-    z-index: 500;
+.specific__container{
+    position: relative;
+    top: var(--header-height);
 }
