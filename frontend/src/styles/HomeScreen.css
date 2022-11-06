@@ -12,7 +12,5 @@
 @media screen and (min-width:500px) {
     .events__container{
         grid-template-columns: repeat(auto-fit, minmax(max-content,350px));
-        
-
     }
 }
