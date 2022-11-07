@@ -4,10 +4,15 @@
     top: var(--header-height);
     max-width: 1600px;
     background-color: #c29dff;
+    padding: 2em;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
 }
 
 @media screen and (min-width:500px) {
     .specific__container{
-        grid-template-columns: repeat(auto-fit, minmax(max-content,350px));
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 20% 60% 20%;
     }
 }

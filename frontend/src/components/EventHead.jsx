@@ -1,15 +1,16 @@
 import data from "../data"
 import "../styles/eventHead.css"
 export default function EventHead({id}){
-    const {name,city,date} = data.events.find(dato => dato.id === Number(id));
+    const {name,city,date,direction} = data.events.find(dato => dato.id === Number(id));
     return(
         <>
-        <div>
+        <div className="eventHead__container">
             <h3 className="eventHead__title">{name}</h3>
-            <li className="eventHead__location">{date.toDateString()}-{date.toLocaleTimeString()}</li>
+            <li className="eventHead__date">{date.toDateString()} - {date.toLocaleTimeString()} hrs</li>
+            <a href="#" className="eventHead__location">{direction}</a>
         </div>
-        <div>
-
+        <div className="eventHead__location__container">
+            <li className="eventHead__location__pc">{direction}</li>
         </div>
         </>
     )
